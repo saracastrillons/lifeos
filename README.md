@@ -2,8 +2,8 @@
 
 # ⬡ LifeOS
 
-**El sistema operativo de tu vida.**
-Hábitos, objetivos, aprendizaje y productividad conectados por un motor de Machine Learning que descubre *qué* hace que tus días sean productivos.
+
+Hábitos, objetivos, aprendizaje y productividad conectados por un motor de Machine Learning que descubre *qué* hace que tus días sean productivos
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
@@ -15,21 +15,21 @@ Hábitos, objetivos, aprendizaje y productividad conectados por un motor de Mach
 
 ---
 
-## ✨ Qué lo hace especial
+##  Qué lo hace especial
 
 | | |
 |---|---|
-| 🧠 **Simulador «¿y si…?»** | Mueve un slider de sueño o activa hábitos y un Random Forest predice tu productividad **en vivo**, con intervalo de confianza calculado a partir de la dispersión de sus 200 árboles. |
-| 📊 **ML honesto** | Las métricas se miden con **validación cruzada K-Fold** (R², MAE) y se comparan con una línea base. Nada de reportar el ajuste sobre los datos de entrenamiento. |
-| 🔥 **Mapa de calor de 6 meses** | Estilo "contribuciones" de GitHub, con tooltip por día. |
-| 🧮 **Matriz de correlación** | Pearson entre sueño, HRV, cada hábito y la productividad, interactiva. |
-| 🧘 **Modo zen** | Temporizador a pantalla completa con aura que respira, **ruido marrón generado con Web Audio** y cuenta atrás en la pestaña. Sigue funcionando aunque navegues. |
-| 🎮 **Gamificación** | XP por cada acción, niveles con curva cuadrática, rachas y confeti hecho a mano en `<canvas>`. |
-| ⌨️ **Teclado primero** | Paleta de comandos `Ctrl K` con búsqueda difusa, creación rápida (`+ tarea`) y atajos `1–6`, `F`, `C`, `?`. |
-| 🤖 **LifeOS AI** | Chat que responde con tus propios datos: patrones, consejos, proyección de mañana, precisión del modelo. |
-| ✅ **Check-in diario** | Registra sueño y productividad; el modelo se reentrena solo cuando cambian los datos. |
+|  **Simulador «¿y si…?»** | Mueve un slider de sueño o activa hábitos y un Random Forest predice tu productividad **en vivo**, con intervalo de confianza calculado a partir de la dispersión de sus 200 árboles. |
+|  **ML honesto** | Las métricas se miden con **validación cruzada K-Fold** (R², MAE) y se comparan con una línea base. Nada de reportar el ajuste sobre los datos de entrenamiento. |
+|  **Mapa de calor de 6 meses** | Estilo "contribuciones" de GitHub, con tooltip por día. |
+|  **Matriz de correlación** | Pearson entre sueño, HRV, cada hábito y la productividad, interactiva. |
+|  **Modo zen** | Temporizador a pantalla completa con aura que respira, **ruido marrón generado con Web Audio** y cuenta atrás en la pestaña. Sigue funcionando aunque navegues. |
+|  **Gamificación** | XP por cada acción, niveles con curva cuadrática, rachas y confeti hecho a mano en `<canvas>`. |
+|  **Teclado primero** | Paleta de comandos `Ctrl K` con búsqueda difusa, creación rápida (`+ tarea`) y atajos `1–6`, `F`, `C`, `?`. |
+|  **LifeOS AI** | Chat que responde con tus propios datos: patrones, consejos, proyección de mañana, precisión del modelo. |
+|  **Check-in diario** | Registra sueño y productividad; el modelo se reentrena solo cuando cambian los datos. |
 
-## 🏗️ Arquitectura
+##  Arquitectura
 
 ```mermaid
 flowchart LR
@@ -54,7 +54,7 @@ flowchart LR
 - **Temporizador basado en marcas de tiempo**, no en contar *ticks*: es exacto aunque el navegador congele la pestaña.
 - **Datos sintéticos con relaciones reales.** El *seed* genera 180 días donde meditar, hacer ejercicio, programar y dormir bien influyen en la productividad. Los tests comprueban que el modelo **recupera** esas relaciones.
 
-## 🚀 Arranque rápido
+##  Arranque rápido
 
 - **Windows:** doble clic en `start.bat`
 - **Mac/Linux:** `./start.sh`
@@ -88,7 +88,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-## 🔌 API
+##  API
 
 | Método | Ruta | Descripción |
 |---|---|---|
@@ -102,7 +102,7 @@ pytest -q
 | `POST` | `/api/chat` | Asistente con intents sobre tus datos |
 | `GET` | `/api/export` | Exporta todos tus datos en JSON |
 
-## ⌨️ Atajos
+## Atajos
 
 | Tecla | Acción |
 |---|---|
@@ -112,7 +112,7 @@ pytest -q
 | `C` | Abrir el chat |
 | `?` | Ver todos los atajos |
 
-## 🧰 Stack
+## Stack
 
 **Backend:** Python · FastAPI · SQLAlchemy 2 · Pydantic 2 · Pandas · NumPy · scikit-learn · pytest
 **Frontend:** React 18 · Vite · Tailwind CSS · Framer Motion · Recharts · Web Audio API · Canvas 2D
